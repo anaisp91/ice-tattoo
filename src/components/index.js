@@ -1,2 +1,3 @@
-export * from "../components/Header/Header";
-export * from "../components/Footer/Footer";
+export * from "../components/Header";
+export * from "../components/Footer";
+export * from "../components/Home";
