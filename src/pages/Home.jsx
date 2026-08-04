@@ -1,6 +1,6 @@
 import {
   Hero,
-  WhatIDo,
+  MyStyles,
   FeaturedGallery,
   FaqPreview,
   CallToAction,
@@ -12,7 +12,7 @@ export const Home = () => {
     <div>
       <h1>Home</h1>
       <Hero />
-      <WhatIDo />
+      <MyStyles />
       <FeaturedGallery />
       <BookingProcess />
       <FaqPreview />

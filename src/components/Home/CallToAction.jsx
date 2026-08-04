@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 export const CallToAction = () => {
   return (
     <section>
-      <p>Call to Action</p>
+      <h2>Ready for your next tattoo?</h2>
+      <p>Let's create something unique together</p>
+      <Link to={"/contact"}>Book now</Link>
     </section>
   );
 };
