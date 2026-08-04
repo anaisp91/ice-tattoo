@@ -1,13 +1,33 @@
 export const Hero = () => {
   return (
-    <section>
-      <div>
-        <h1>Ice Tattoo</h1>
-        <p>Tattooing since 2016</p>
+    <section className="flex flex-col items-center gap-8 pt-8 bg-neutral-900 md:flex-row">
+      <div
+        className="text-center pb-5
+            md:flex-1 md:pl-6"
+      >
+        <h1
+          className=" text-6xl tracking-wide uppercase p-2 text-stone-300 md:text-5xl md:tracking-wider"
+          style={{ fontFamily: "var(--font-heading)" }}
+        >
+          Ice Tattoo
+        </h1>
+        <p
+          className="text-stone-400 text-[1rem]"
+          style={{ fontFamily: "var(--font-body)" }}
+        >
+          Traditional & Fine Line Tattoo Artist
+        </p>
       </div>
 
-      <div>
-        <img src="/images/home/foto-hero.JPG" alt="Ice tattooing a client" />
+      <div
+        className="w-4/5 pb-12
+            md:flex-1 md:pr-7"
+      >
+        <img
+          src="/images/home/foto-hero.JPG"
+          alt="Ice tattooing a client"
+          className="w-full h-auto max-w-lg brightness-90 "
+        />
       </div>
     </section>
   );
