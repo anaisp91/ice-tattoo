@@ -7,7 +7,7 @@ export const Hero = () => {
       </div>
 
       <div>
-        <img src alt="Ice tattooing a client" />
+        <img src="/images/home/foto-hero.JPG" alt="Ice tattooing a client" />
       </div>
     </section>
   );
