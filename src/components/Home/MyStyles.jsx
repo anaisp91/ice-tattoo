@@ -2,7 +2,7 @@ export const MyStyles = () => {
   return (
     <section className="py-20 bg-neutral-900">
       <h2
-        className="text-center text-stone-300 text-3xl uppercase tracking-wider"
+        className="text-center text-stone-300 text-4xl uppercase tracking-wider"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         My Styles
