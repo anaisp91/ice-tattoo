@@ -11,7 +11,7 @@ export const BookingProcess = () => {
         How It Works
       </h2>
       <p
-        className="text-center pb-6 text-base"
+        className="text-center pb-6 text-base uppercase"
         style={{ fontFamily: "var(--font-body)" }}
       >
         Follow the steps
