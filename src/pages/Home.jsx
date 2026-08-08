@@ -3,8 +3,8 @@ import {
   MyStyles,
   FeaturedGallery,
   FaqPreview,
-  CallToAction,
   BookingProcess,
+  Contact,
 } from "../components";
 
 export const Home = () => {
@@ -15,7 +15,7 @@ export const Home = () => {
       <FeaturedGallery />
       <BookingProcess />
       <FaqPreview />
-      <CallToAction />
+      <Contact />
     </div>
   );
 };

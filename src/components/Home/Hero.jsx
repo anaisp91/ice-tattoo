@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <section className="flex flex-col items-center gap-8 pt-8 bg-neutral-900 md:flex-row">
+    <section className="flex flex-col items-center gap-8 pt-8  md:flex-row bg-neutral-900">
       <div
         className="text-center pb-5
             md:flex-1 md:pl-6"

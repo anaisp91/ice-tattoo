@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const CallToAction = () => {
+export const Contact = () => {
   return (
     <section>
       <h2>Ready for your next tattoo?</h2>
