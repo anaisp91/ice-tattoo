@@ -8,7 +8,7 @@ export const MyStyles = () => {
         My Styles
       </h2>
 
-      <div className="flex flex-col items-center md:flex-row md:px-6 md:justify-center md:pt-8">
+      <div className="flex flex-col items-center md:flex-row md:px-6 md:justify-center md:pt-1">
         <div className="p-10">
           <h3
             className="text-center pb-10 text-stone-300 text-4xl"
