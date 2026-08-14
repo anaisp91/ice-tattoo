@@ -1,15 +1,14 @@
+import { EmailIcon, InstagramIcon } from "../Icons";
+
 export const SocialLinks = () => {
   return (
-    <section>
-      <ul>
+    <section className="">
+      <ul className="flex flex-row gap-3 md:gap-10">
         <li>
-          <a>Instagram</a>
+          <InstagramIcon />
         </li>
         <li>
-          <a>Email</a>
-        </li>
-        <li>
-          <a>Tik Tok</a>
+          <EmailIcon />
         </li>
       </ul>
     </section>

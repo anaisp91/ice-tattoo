@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export const FeaturedGallery = () => {
   return (
-    <section className="py-20 bg-neutral-900">
+    <section className="pb-20 pt-17 bg-neutral-900 md:py-20">
       <h2
         className="text-center pb-12 text-4xl text-stone-300 uppercase tracking-wider"
         style={{ fontFamily: "var(--font-heading)" }}
@@ -73,10 +73,10 @@ export const FeaturedGallery = () => {
           />
         </div>
       </div>
-      <div className="pt-16 text-center">
+      <div className="pt-16 text-center md:pt-20">
         <Link
           to={"/gallery"}
-          className="py-3 px-8 border border-stone-300 text-stone-300 uppercase tracking-[0.2em] transition-all duration-300 hover:bg-stone-300 hover:text-neutral-900"
+          className="py-3 px-8 border border-stone-300 text-stone-300 uppercase tracking-[0.2em] transition-all duration-300 hover:bg-stone-300 hover:text-neutral-900 "
         >
           View Full Gallery
         </Link>

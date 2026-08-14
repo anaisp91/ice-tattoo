@@ -6,7 +6,7 @@ export const Hero = () => {
             md:flex-1 md:pl-6"
       >
         <h1
-          className=" text-6xl tracking-wide uppercase p-2 text-stone-300 md:text-5xl md:tracking-wider"
+          className=" text-6xl tracking-wide uppercase p-2 text-stone-300 md:text-5xl md:tracking-wider lg:text-6xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Ice Tattoo
