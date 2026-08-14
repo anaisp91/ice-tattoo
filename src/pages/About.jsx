@@ -1,7 +1,10 @@
+import { MyJourney, WhoIAm } from "../components";
+
 export const About = () => {
   return (
     <div>
-      <h2>About</h2>
+      <WhoIAm />
+      <MyJourney />
     </div>
   );
 };
