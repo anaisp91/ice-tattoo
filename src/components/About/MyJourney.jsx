@@ -1,8 +1,13 @@
 export const MyJourney = () => {
   return (
-    <section className="py-10">
-      <h2 className="text-2xl text-center">My Journey</h2>
-      <p className="text-justify px-10 pt-5 text-base">
+    <section className="py-20 bg-stone-300 text-neutral-900 md:px-8">
+      <h2
+        className="text-2xl text-center uppercase lg:text-6xl lg:pb-8"
+        style={{ fontFamily: "var(--font-heading)" }}
+      >
+        My Journey
+      </h2>
+      <p className="text-justify px-10 pt-5 text-base lg:px-40">
         My journey has always been about exploring. Before tattooing, I was
         already painting, drawing and experimenting with every material I could
         get my hands on. I never studied art formally; I’ve always been
