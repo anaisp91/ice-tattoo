@@ -7,12 +7,12 @@ export const faqData = [
   {
     question: "How do I book a tattoo appointment?",
     answer:
-      "To book an appointment, send me your tattoo idea, preferred placement, approximate size and any references or inspiration you have. I'll review the details and get back to you with the next steps.",
+      "You can get in touch with me through Instagram, email or the contact form on this website. Tell me about your idea, including the size and placement, and send me any references that can help me understand what you have in mind. From there, we can discuss the design and I’ll let you know if anything needs to be adjusted to make sure the tattoo works well and holds up over time.",
   },
   {
     question: "Do you design custom tattoos?",
     answer:
-      "Yes. I create custom tattoo designs based on each client's ideas, references and preferred style. We can discuss your concept and adapt the design to suit the placement and size of your tattoo.",
+      "Almost all of my tattoos are custom designs. Some clients give me complete creative freedom and use my previous work as a reference, while others come with a very specific idea in mind. Either way, I always adapt the design so the final tattoo feels personal and unique to you. I’ll send you the design a few days before your appointment so we can make sure it feels right for you. If anything needs to be adjusted, we can work on it together before the tattooing session.",
   },
   {
     question: "What tattoo styles do you specialise in?",
@@ -38,5 +38,10 @@ export const faqData = [
     question: "Do you tattoo in Barcelona?",
     answer:
       "Yes. I am a tattoo artist based in Barcelona, specialising in Traditional and Fine Line tattooing. Contact me with your idea and I'll provide the information you need to book a session.",
+  },
+  {
+    question: "How should I take care of my new tattoo?",
+    answer:
+      "Aftercare depends on the type of tattoo. For Fine Line tattoos, I usually recommend gently washing the tattoo three times a day with water and soap, then gently drying it with paper towel and applying a small amount of tattoo healing cream for around a week. During the first night, keep it covered to prevent it from sticking to your bedding. For Traditional tattoos, I prefer a short dry-healing period. For the first two days, wash and gently dry the tattoo with paper towel three times a day without applying cream. During the first night, keep it covered to protect it from your bedding. After the first two days, start applying a small amount of healing cream after each wash to keep the skin moisturised while it heals. sI’ll always give you specific aftercare instructions depending on your tattoo.",
   },
 ];
