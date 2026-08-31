@@ -5,3 +5,4 @@ export * from "../components/Icons";
 export * from "../components/About";
 export * from "../components/ui";
 export * from "../components/Gallery";
+export * from "../components/Contact";
