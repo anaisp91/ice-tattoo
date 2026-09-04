@@ -2,25 +2,25 @@ export const ContactForm = () => {
   return (
     <>
       <form
-        className=" text-stone-300 max-w-[300px] py-5 flex flex-col gap-5  px-8 md:max-w-[700px] md:text-lg"
+        className=" text-stone-300 w-full max-w-[300px] py-5 flex flex-col gap-5  px-8 md:max-w-[600px] md:px-0 md:text-lg"
         style={{ fontFamily: "var(--font-body)" }}
       >
-        <div className="flex flex-col gap-2 max-w-[200px]">
+        <div className="flex flex-col gap-2 ">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            className="border-b border-stone-300 bg-transparent outline-none"
+            className=" max-w-[200px] border-b border-stone-300 bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
-        <div className="flex flex-col gap-2 max-w-[200px]">
+        <div className="flex flex-col gap-2">
           <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
-            className="border-b border-stone-300 bg-transparent outline-none"
+            className="border-b border-stone-300 bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
         <fieldset className="flex gap-3">
@@ -72,7 +72,7 @@ export const ContactForm = () => {
             name="idea"
             rows="10"
             cols="30"
-            className="border-b border-stone-300 bg-transparent outline-none resize-none h-24"
+            className="max-w-[200px] border-b border-stone-300 bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
           ></textarea>
         </div>
         <div className="flex flex-col gap-2">

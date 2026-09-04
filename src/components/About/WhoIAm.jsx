@@ -3,7 +3,7 @@ export const WhoIAm = () => {
     <section className="py-10 flex flex-col gap-4 items-center bg-neutral-900 md:flex-row md:px-8 lg:gap-8">
       <div className="px-10 text-justify text-stone-300 md:flex-1 lg:px-20">
         <h2
-          className="text-2xl text-center pb-5 uppercase lg:text-6xl lg:text-start lg:pb-8"
+          className="text-4xl text-center pb-5 uppercase md:py-14 lg:text-6xl lg:text-start lg:pb-8"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Who I am

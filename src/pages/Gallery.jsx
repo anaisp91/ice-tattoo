@@ -11,9 +11,9 @@ export const Gallery = () => {
   };
 
   return (
-    <div className="py-10 md:py-20 bg-neutral-900 pb-20">
+    <div className="py-14 md:py-20 bg-neutral-900 pb-20">
       <h2
-        className="text-3xl uppercase text-center text-stone-300 md:text-5xl lg:text-6xl"
+        className="text-4xl uppercase text-center text-stone-300 md:text-5xl lg:text-6xl"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Gallery

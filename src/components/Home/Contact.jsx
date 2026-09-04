@@ -4,12 +4,15 @@ export const Contact = () => {
   return (
     <section className="py-20 bg-stone-300 flex flex-col items-center gap-7 ">
       <h2
-        className="text-2xl text-neutral-900 uppercase tracking-wider "
+        className="text-2xl text-neutral-900 uppercase tracking-wider text-center"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Ready for your next tattoo?
       </h2>
-      <p className="text-base " style={{ fontFamily: "var(--font-body)" }}>
+      <p
+        className="text-base text-center "
+        style={{ fontFamily: "var(--font-body)" }}
+      >
         Let's create something unique together
       </p>
       <div className="text-center md:pt-4">

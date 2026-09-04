@@ -4,7 +4,7 @@ export const MyPhilosophy = () => {
   return (
     <section className="py-20 flex flex-col items-center gap-8 bg-stone-300 text-neutral-900 md:px-8">
       <h2
-        className="text-2xl uppercase lg:text-6xl lg:pb-8"
+        className="text-4xl uppercase lg:text-6xl lg:pb-8"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Trust the process

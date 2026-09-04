@@ -1,9 +1,9 @@
 export const Styles = () => {
   return (
-    <section className="py-10 flex flex-col items-center gap-8 bg-neutral-900 text-stone-300 md:px-8 lg:flex-row">
+    <section className="py-10 flex flex-col items-center gap-8 bg-neutral-900 text-stone-300 md:px-8  lg:flex-row">
       <div className="flex flex-col gap-5 py-10 ">
         <h2
-          className="text-2xl uppercase text-center lg:text-6xl lg:pb-8"
+          className="text-4xl uppercase text-center lg:text-6xl lg:pb-8"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           My Styles

@@ -5,7 +5,7 @@ export const BookingProcess = () => {
   return (
     <section className="py-20 bg-stone-300">
       <h2
-        className="text-center pb-5 text-5xl uppercase tracking-wide"
+        className="text-center pb-5 text-4xl uppercase tracking-wide"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         How It Works

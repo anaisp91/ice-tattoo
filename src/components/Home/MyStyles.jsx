@@ -11,8 +11,8 @@ export const MyStyles = () => {
       <div className="flex flex-col items-center md:flex-row md:px-6 md:justify-center md:pt-1">
         <div className="p-10">
           <h3
-            className="text-center pb-10 text-stone-300 text-4xl"
-            style={{ fontFamily: "var(--font-heading)" }}
+            className="text-center pb-10 text-stone-300 text-2xl"
+            style={{ fontFamily: "var(--font-body)" }}
           >
             Traditional
           </h3>
@@ -41,8 +41,8 @@ export const MyStyles = () => {
         </div>
         <div className="p-10">
           <h3
-            className="text-center pb-10 text-stone-300 text-4xl"
-            style={{ fontFamily: "var(--font-heading)" }}
+            className="text-center pb-10 text-stone-300 text-2xl"
+            style={{ fontFamily: "var(--font-body)" }}
           >
             Fineline
           </h3>
