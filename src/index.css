@@ -11,6 +11,9 @@
 :root {
   --font-heading: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
+  --color-black: #151412;
+  --color-sand: #d8ccb8;
+  --color-blue: #17324a;
 }
 
 html {
