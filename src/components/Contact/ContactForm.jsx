@@ -2,7 +2,7 @@ export const ContactForm = () => {
   return (
     <>
       <form
-        className=" text-stone-300 w-full max-w-[300px] py-5 flex flex-col gap-5  px-8 md:max-w-[600px] md:px-0 md:text-lg"
+        className=" text-[var(--color-sand)] w-full max-w-[300px] py-5 flex flex-col gap-5  px-8 md:max-w-[600px] md:px-0 md:text-lg"
         style={{ fontFamily: "var(--font-body)" }}
       >
         <div className="flex flex-col gap-2 ">
@@ -11,7 +11,7 @@ export const ContactForm = () => {
             type="text"
             id="name"
             name="name"
-            className=" max-w-[200px] border-b border-stone-300 bg-transparent outline-none md:max-w-[400px]"
+            className=" max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -20,7 +20,7 @@ export const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            className="border-b border-stone-300 bg-transparent outline-none md:max-w-[400px]"
+            className="border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
         <fieldset className="flex gap-3">
@@ -30,7 +30,7 @@ export const ContactForm = () => {
               type="radio"
               name="upperage"
               value="yes"
-              className="accent-sky-900"
+              className="accent-[var(--color-blue)]"
             />
             Yes
           </label>
@@ -39,7 +39,7 @@ export const ContactForm = () => {
               type="radio"
               name="upperage"
               value="no"
-              className="accent-sky-900"
+              className="accent-[var(--color-blue)]"
             />
             No
           </label>
@@ -51,7 +51,7 @@ export const ContactForm = () => {
               type="radio"
               name="tattooFor"
               value="myself"
-              className="accent-sky-900"
+              className="accent-[var(--color-blue)]"
             />
             Myself
           </label>
@@ -60,7 +60,7 @@ export const ContactForm = () => {
               type="radio"
               name="tattooFor"
               value="group"
-              className="accent-sky-900"
+              className="accent-[var(--color-blue)]"
             />
             Group
           </label>
@@ -72,7 +72,7 @@ export const ContactForm = () => {
             name="idea"
             rows="10"
             cols="30"
-            className="max-w-[200px] border-b border-stone-300 bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
+            className="max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
           ></textarea>
         </div>
         <div className="flex flex-col gap-2">
@@ -87,7 +87,7 @@ export const ContactForm = () => {
           />
           <label
             htmlFor="references"
-            className="border border-stone-300 text-stone-300 py-1 cursor-pointer w-[150px] text-center hover:bg-sky-900 hover:border-sky-900 transition-all duration-100"
+            className="border border-[var(--color-sand)] text-[var(--color-sand)] py-1 cursor-pointer w-[150px] text-center hover:bg-[var(--color-sand)] hover:text-[--color-black] transition-all duration-300"
           >
             Upload fle
           </label>
@@ -96,7 +96,7 @@ export const ContactForm = () => {
           <input
             type="submit"
             value="Send"
-            className="text-stone-300 border py-3 px-7 hover:bg-stone-300 hover:text-neutral-900 transition-all duration-300"
+            className="text-[var(--color-sand)] border border-[var(--color-sand)] py-3 px-7 hover:bg-[var(--color-blue)] hover:text-[var(--color-sand)] hover:border-[var(--color-blue)] transition-all duration-300"
           />
         </div>
       </form>

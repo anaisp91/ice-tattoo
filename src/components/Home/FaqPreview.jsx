@@ -3,9 +3,9 @@ import { faqData } from "../../data/FaqData";
 
 export const FaqPreview = () => {
   return (
-    <section className="py-20 bg-neutral-900">
+    <section className="py-20 bg-[var(--color-black)]">
       <h2
-        className="text-center text-4xl text-stone-300 uppercase tracking-wider pb-8"
+        className="text-center text-4xl text-[var(--color-sand)] uppercase tracking-wider pb-8"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Frequent Faq

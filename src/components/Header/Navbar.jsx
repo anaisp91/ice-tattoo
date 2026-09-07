@@ -14,7 +14,7 @@ export const Navbar = () => {
       </button>
       {open ? (
         <ul
-          className="absolute flex flex-col items-end top-[66px] bg-stone-300/90 right-[-24px] w-screen pr-10 py-4 text-lg uppercase"
+          className="absolute flex flex-col items-end top-[66px] bg-[var(--color-sand-90)] right-[-24px] w-screen pr-10 py-4 text-lg uppercase"
           style={{ fontFamily: "var(--font-body)" }}
         >
           <li>
@@ -45,7 +45,7 @@ export const Navbar = () => {
         </ul>
       ) : (
         <ul
-          className=" hidden md:flex md:gap-8 text-neutral-900 uppercase lg:text-lg"
+          className=" hidden md:flex md:gap-8 text-[var(--color-black)] uppercase lg:text-lg"
           style={{ fontFamily: "var(--font-body)" }}
         >
           <li>

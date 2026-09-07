@@ -11,9 +11,9 @@ export const Gallery = () => {
   };
 
   return (
-    <div className="py-14 md:py-20 bg-neutral-900 pb-20">
+    <div className="py-14 md:py-20 bg-[var(--color-black)] pb-20">
       <h2
-        className="text-4xl uppercase text-center text-stone-300 md:text-5xl lg:text-6xl"
+        className="text-4xl uppercase text-center text-[var(--color-sand)] md:text-5xl lg:text-6xl"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Gallery
@@ -39,7 +39,7 @@ export const Gallery = () => {
         </ul>
       </section>
       <div className="flex flex-col items-center gap-7">
-        <p className="text-stone-300 text-base text-center">
+        <p className="text-[var(--color-sand)] text-base text-center">
           Found something that speaks to you?
           <br />
           Let's create something personal together.
@@ -47,7 +47,7 @@ export const Gallery = () => {
         <LinkButton
           to={"/contact"}
           className={
-            "uppercase text-stone-300 border border-stone-300 py-3 px-7 transition-all duration-300 hover:bg-sky-950 hover:border-sky-950"
+            "uppercase text-[var(--color-sand)] border border-[var(--color-sand)] py-3 px-7 transition-all duration-300 hover:bg-[var(--color-blue)] hover:border-[var(--color-blue)]"
           }
           title={"Get in touch"}
         />

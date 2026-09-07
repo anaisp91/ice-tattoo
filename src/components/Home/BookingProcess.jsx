@@ -3,7 +3,7 @@ import { bookingData } from "../../data/BookingData";
 
 export const BookingProcess = () => {
   return (
-    <section className="py-20 bg-stone-300">
+    <section className="py-20 bg-[var(--color-sand)] text-[var(--color-black)]">
       <h2
         className="text-center pb-5 text-4xl uppercase tracking-wide"
         style={{ fontFamily: "var(--font-heading)" }}

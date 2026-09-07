@@ -1,6 +1,6 @@
 export const MyJourney = () => {
   return (
-    <section className="py-20 bg-stone-300 text-neutral-900 md:px-8">
+    <section className="py-20 bg-[var(--color-sand)] text-[var(--color-black)] md:px-8">
       <h2
         className="text-4xl text-center uppercase lg:text-6xl lg:pb-8"
         style={{ fontFamily: "var(--font-heading)" }}

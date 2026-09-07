@@ -2,7 +2,7 @@ import { LinkButton } from "../ui";
 
 export const MyPhilosophy = () => {
   return (
-    <section className="py-20 flex flex-col items-center gap-8 bg-stone-300 text-neutral-900 md:px-8">
+    <section className="py-20 flex flex-col items-center gap-8 bg-[var(--color-sand)] text-[var(--color-black)] md:px-8">
       <h2
         className="text-4xl uppercase lg:text-6xl lg:pb-8"
         style={{ fontFamily: "var(--font-heading)" }}
@@ -26,7 +26,7 @@ export const MyPhilosophy = () => {
         to={"/contact"}
         title={"Get in touch"}
         className={
-          "uppercase text-neutral-900 border border-neutral-900 px-7 py-3 transition-colors duration-300 hover:text-stone-300 hover:bg-neutral-900"
+          "uppercase text-[var(--color-black)] border border-[var(--color-black)] px-7 py-3 transition-all duration-300 hover:text-[var(--color-sand)] hover:bg-[var(--color-blue)] hover:border-[var(--color-blue)]"
         }
       />
     </section>

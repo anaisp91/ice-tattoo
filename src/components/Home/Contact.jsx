@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export const Contact = () => {
   return (
-    <section className="py-20 bg-stone-300 flex flex-col items-center gap-7 ">
+    <section className="py-20 bg-[var(--color-sand)] flex flex-col items-center gap-7 ">
       <h2
-        className="text-2xl text-neutral-900 uppercase tracking-wider text-center"
+        className="text-2xl text-[var(--color-black)] uppercase tracking-wider text-center"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         Ready for your next tattoo?
@@ -18,7 +18,7 @@ export const Contact = () => {
       <div className="text-center md:pt-4">
         <Link
           to={"/contact"}
-          className="py-3 px-7 text-neutral-900 uppercase tracking-[0.2em] border border-neutral-900 transition-all duration-300 hover:bg-sky-950 hover:text-stone-300"
+          className="py-3 px-7 text-[var(--color-black)] uppercase tracking-[0.2em] border border-[var(--color-black)] transition-all duration-300 hover:bg-[var(--color-blue)] hover:text-[var(--color-sand)] hover:border-[var(--color-blue)]"
           style={{ fontFamily: "var(--font-body)" }}
         >
           Book now

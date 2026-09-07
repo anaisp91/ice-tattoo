@@ -32,7 +32,7 @@ export const ImageModal = ({ selectedImage, setSelectedImage }) => {
   return (
     <div
       onClick={() => setSelectedImage(null)}
-      className="fixed inset-0 bg-neutral-900/90 flex flex-col items-center justify-center gap-10 lg:gap-8"
+      className="fixed inset-0 bg-[var(--color-black-90)] flex flex-col items-center justify-center gap-10 lg:gap-8"
     >
       <img
         onClick={(e) => e.stopPropagation()}
@@ -51,7 +51,7 @@ export const ImageModal = ({ selectedImage, setSelectedImage }) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6 text-stone-300 md:size-10"
+            className="size-6 text-[--color-sand] md:size-10"
           >
             <path
               strokeLinecap="round"
@@ -63,7 +63,7 @@ export const ImageModal = ({ selectedImage, setSelectedImage }) => {
 
         <button
           onClick={() => setSelectedImage(null)}
-          className="text-stone-300 text-3xl"
+          className="text-[var(--color-sand)] text-3xl"
         >
           X
         </button>
@@ -74,7 +74,7 @@ export const ImageModal = ({ selectedImage, setSelectedImage }) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6 text-stone-300 md:size-10"
+            className="size-6 text-[var(--color-sand)] md:size-10"
           >
             <path
               strokeLinecap="round"

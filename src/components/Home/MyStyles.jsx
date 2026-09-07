@@ -1,8 +1,8 @@
 export const MyStyles = () => {
   return (
-    <section className="py-20 bg-neutral-900">
+    <section className="py-20 bg-[var(--color-black)]">
       <h2
-        className="text-center text-stone-300 text-4xl uppercase tracking-wider"
+        className="text-center text-[var(--color-sand)] text-4xl uppercase tracking-wider"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         My Styles
@@ -11,7 +11,7 @@ export const MyStyles = () => {
       <div className="flex flex-col items-center md:flex-row md:px-6 md:justify-center md:pt-1">
         <div className="p-10">
           <h3
-            className="text-center pb-10 text-stone-300 text-2xl"
+            className="text-center pb-10 text-[var(--color-sand)] text-2xl"
             style={{ fontFamily: "var(--font-body)" }}
           >
             Traditional
@@ -41,7 +41,7 @@ export const MyStyles = () => {
         </div>
         <div className="p-10">
           <h3
-            className="text-center pb-10 text-stone-300 text-2xl"
+            className="text-center pb-10 text-[var(--color-sand)] text-2xl"
             style={{ fontFamily: "var(--font-body)" }}
           >
             Fineline

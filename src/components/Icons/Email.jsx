@@ -1,6 +1,9 @@
 export const EmailIcon = () => {
   return (
-    <a href="mailto:tattoo.ice.ink@gmail.com" className="text-stone-300">
+    <a
+      href="mailto:tattoo.ice.ink@gmail.com"
+      className="text-[var(--color-sand)] hover:text-[var(--color-blue)]"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
