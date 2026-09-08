@@ -85,6 +85,7 @@ export const ContactForm = () => {
             id="name"
             name="name"
             onChange={onChange}
+            value={form.name}
             className=" max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
@@ -95,6 +96,7 @@ export const ContactForm = () => {
             id="email"
             name="email"
             onChange={onChange}
+            value={form.email}
             className="border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
@@ -107,6 +109,7 @@ export const ContactForm = () => {
               value="yes"
               onChange={onChange}
               className="accent-[var(--color-blue)]"
+              checked={form.upperage === "yes"}
             />
             Yes
           </label>
@@ -117,6 +120,7 @@ export const ContactForm = () => {
               value="no"
               onChange={onChange}
               className="accent-[var(--color-blue)]"
+              checked={form.upperage === "no"}
             />
             No
           </label>
@@ -130,6 +134,7 @@ export const ContactForm = () => {
               value="myself"
               onChange={onChange}
               className="accent-[var(--color-blue)]"
+              checked={form.tattooFor === "myself"}
             />
             Myself
           </label>
@@ -140,6 +145,7 @@ export const ContactForm = () => {
               value="group"
               onChange={onChange}
               className="accent-[var(--color-blue)]"
+              checked={form.tattooFor === "group"}
             />
             Group
           </label>
@@ -152,6 +158,7 @@ export const ContactForm = () => {
             rows="10"
             cols="30"
             onChange={onChange}
+            value={form.idea}
             className="max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
           ></textarea>
         </div>
