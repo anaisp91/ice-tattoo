@@ -20,8 +20,7 @@ export const ContactForm = () => {
   };
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submit");
-    console.log(form);
+
     if (
       !form.email ||
       !form.idea ||
@@ -44,13 +43,13 @@ export const ContactForm = () => {
     setError(null);
     setLoading(true);
     setSuccess(null);
-    console.log("Success");
+
     try {
       const response = await fetch("https://usebasin.com/f/9a4cd2a42965", {
         method: "POST",
         body: formData,
       });
-      console.log(response);
+
       if (!response.ok) {
         setError("Request failed");
         return;
