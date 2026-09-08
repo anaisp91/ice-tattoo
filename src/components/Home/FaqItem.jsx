@@ -3,7 +3,7 @@ export const FaqItem = ({ question, answer }) => {
     <>
       <details className="px-10 py-3">
         <summary
-          className="text-[var(--color-sand)] text-xl md:text-2xl"
+          className="text-[var(--color-sand)] text-xl md:text-2xl cursor-pointer"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {question}

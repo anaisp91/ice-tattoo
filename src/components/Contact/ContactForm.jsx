@@ -1,7 +1,81 @@
+import { useState } from "react";
+
 export const ContactForm = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    upperage: "",
+    tattooFor: "",
+    idea: "",
+    references: "",
+  });
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(null);
+
+  const onChange = (e) => {
+    const value = e.target.type === "file" ? e.target.files : e.target.value;
+    const name = e.target.type === "file" ? "references" : e.target.name;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submit");
+    console.log(form);
+    if (
+      !form.email ||
+      !form.idea ||
+      !form.name ||
+      !form.tattooFor ||
+      !form.upperage
+    ) {
+      setError("Complete all fields");
+      return;
+    }
+    const formData = new FormData();
+    formData.append("name", form.name);
+    formData.append("email", form.email);
+    formData.append("upperage", form.upperage);
+    formData.append("tattooFor", form.tattooFor);
+    formData.append("idea", form.idea);
+    for (const file of form.references) {
+      formData.append("attachments[]", file);
+    }
+    setError(null);
+    setLoading(true);
+    setSuccess(null);
+    console.log("Success");
+    try {
+      const response = await fetch("https://usebasin.com/f/9a4cd2a42965", {
+        method: "POST",
+        body: formData,
+      });
+      console.log(response);
+      if (!response.ok) {
+        setError("Request failed");
+        return;
+      }
+      setSuccess(true);
+      setError(null);
+      setForm({
+        name: "",
+        email: "",
+        upperage: "",
+        tattooFor: "",
+        idea: "",
+        references: "",
+      });
+    } catch {
+      setError("Request failed");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <form
+        onSubmit={onSubmit}
         className=" text-[var(--color-sand)] w-full max-w-[300px] py-5 flex flex-col gap-5  px-8 md:max-w-[600px] md:px-0 md:text-lg"
         style={{ fontFamily: "var(--font-body)" }}
       >
@@ -11,6 +85,7 @@ export const ContactForm = () => {
             type="text"
             id="name"
             name="name"
+            onChange={onChange}
             className=" max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
@@ -20,6 +95,7 @@ export const ContactForm = () => {
             type="email"
             id="email"
             name="email"
+            onChange={onChange}
             className="border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
           />
         </div>
@@ -30,6 +106,7 @@ export const ContactForm = () => {
               type="radio"
               name="upperage"
               value="yes"
+              onChange={onChange}
               className="accent-[var(--color-blue)]"
             />
             Yes
@@ -39,6 +116,7 @@ export const ContactForm = () => {
               type="radio"
               name="upperage"
               value="no"
+              onChange={onChange}
               className="accent-[var(--color-blue)]"
             />
             No
@@ -51,6 +129,7 @@ export const ContactForm = () => {
               type="radio"
               name="tattooFor"
               value="myself"
+              onChange={onChange}
               className="accent-[var(--color-blue)]"
             />
             Myself
@@ -60,6 +139,7 @@ export const ContactForm = () => {
               type="radio"
               name="tattooFor"
               value="group"
+              onChange={onChange}
               className="accent-[var(--color-blue)]"
             />
             Group
@@ -72,6 +152,7 @@ export const ContactForm = () => {
             name="idea"
             rows="10"
             cols="30"
+            onChange={onChange}
             className="max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
           ></textarea>
         </div>
@@ -80,9 +161,10 @@ export const ContactForm = () => {
           <input
             type="file"
             id="references"
-            name="references"
+            name="attachments[]"
             multiple
             accept="image/*"
+            onChange={onChange}
             className="hidden"
           />
           <label
@@ -91,7 +173,13 @@ export const ContactForm = () => {
           >
             Upload fle
           </label>
+          {form.references.length === 0
+            ? ""
+            : `References selected - ${form.references.length}`}
         </div>
+        {error && <p>{error}</p>}
+        {loading && <p>Sending...</p>}
+        {success && <p>Message sent successfully!</p>}
         <div className="py-10">
           <input
             type="submit"

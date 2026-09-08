@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header, Footer } from "../components";
+import { Header, Footer, ScrollToTopButton } from "../components";
 
 export const MainLayout = () => {
   return (
@@ -9,6 +9,7 @@ export const MainLayout = () => {
         <main className="flex-1 flex flex-col">
           <Outlet />
         </main>
+        <ScrollToTopButton />
         <Footer />
       </div>
     </>
