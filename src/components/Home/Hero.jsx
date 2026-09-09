@@ -12,10 +12,11 @@ export const Hero = () => {
           Ice Tattoo
         </h1>
         <p
-          className="text-[var(--color-sand)] text-[1rem]"
+          className="text-[var(--color-sand)] text-[1rem] pt-3"
           style={{ fontFamily: "var(--font-body)" }}
         >
           Traditional & Fine Line Tattoo Artist
+          <br className="md:hidden" /> in Barcelona
         </p>
       </div>
 

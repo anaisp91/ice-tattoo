@@ -5,10 +5,10 @@ export const FaqPreview = () => {
   return (
     <section className="py-20 bg-[var(--color-black)]">
       <h2
-        className="text-center text-4xl text-[var(--color-sand)] uppercase tracking-wider pb-8"
+        className="text-center text-3xl text-[var(--color-sand)] uppercase tracking-wider pb-8"
         style={{ fontFamily: "var(--font-heading)" }}
       >
-        Frequent Faq
+        Frequently Asked Questions
       </h2>
 
       <div className="md:pl-14 pt-6 lg:pl-24">

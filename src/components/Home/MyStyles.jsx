@@ -5,7 +5,7 @@ export const MyStyles = () => {
         className="text-center text-[var(--color-sand)] text-4xl uppercase tracking-wider"
         style={{ fontFamily: "var(--font-heading)" }}
       >
-        My Styles
+        My Tattoo Styles
       </h2>
 
       <div className="flex flex-col items-center md:flex-row md:px-6 md:justify-center md:pt-1">
@@ -44,7 +44,7 @@ export const MyStyles = () => {
             className="text-center pb-10 text-[var(--color-sand)] text-2xl"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Fineline
+            Fine Line
           </h3>
           <ul className="flex flex-col gap-8 max-w-80">
             <li>

@@ -7,7 +7,7 @@ export const Faq = () => {
         className="text-center text-3xl uppercase text-[var(--color-sand)] md:text-5xl md:py-14 lg:text-6xl"
         style={{ fontFamily: "var(--font-heading)" }}
       >
-        Frequent Questions
+        Frequent Asked Questions
       </h2>
       <div className="py-10 md:px-10 lg:px-20">
         {faqData.map((item) => (

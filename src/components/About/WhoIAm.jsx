@@ -27,7 +27,7 @@ export const WhoIAm = () => {
       <div className="w-[300px] h-auto pt-5  md:pr-8 lg:w-[400px]">
         <img
           src="/images/about/painting-tiger.JPG"
-          alt="ice painting a tiger with acrilycs"
+          alt="ice painting a tiger with acrylics"
         />
       </div>
     </section>

@@ -2,22 +2,22 @@ export const GalleryData = [
   {
     key: 1,
     src: "/images/gallery/butterfly-traditional.jpg",
-    alt: " traditional butterfly tattoo",
+    alt: "traditional butterfly tattoo",
   },
   {
     key: 2,
     src: "/images/gallery/anchor-traditional.jpg",
-    alt: " traditional anchor tattoo",
+    alt: "traditional anchor tattoo",
   },
   {
     key: 3,
     src: "/images/gallery/bear-fineline.jpg",
-    alt: " fineline bear tattoo",
+    alt: "fine line bear tattoo",
   },
   {
     key: 4,
     src: "/images/gallery/cat-traditional.jpg",
-    alt: " traditional orange cat tattoo",
+    alt: "traditional orange cat tattoo",
   },
   {
     key: 5,
@@ -27,7 +27,7 @@ export const GalleryData = [
   {
     key: 6,
     src: "/images/gallery/bubbles-fineline.jpg",
-    alt: "fineline bubbles tattoo",
+    alt: "fine line bubbles tattoo",
   },
   {
     key: 7,
@@ -42,12 +42,12 @@ export const GalleryData = [
   {
     key: 9,
     src: "/images/gallery/fan-fineline.jpg",
-    alt: "fineline fan tattoo",
+    alt: "fine line fan tattoo",
   },
   {
     key: 10,
     src: "/images/gallery/hienna-traditional.jpg",
-    alt: "traditional hyenna tattoo",
+    alt: "traditional hyena tattoo",
   },
   {
     key: 11,
@@ -62,7 +62,7 @@ export const GalleryData = [
   {
     key: 13,
     src: "/images/gallery/sculpture-fineline.jpg",
-    alt: "fineline sculpture tattoo",
+    alt: "fine line sculpture tattoo",
   },
   {
     key: 14,

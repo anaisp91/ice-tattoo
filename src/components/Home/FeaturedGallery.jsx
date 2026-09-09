@@ -12,7 +12,7 @@ export const FeaturedGallery = () => {
         <div className="overflow-hidden lg:col-span-2 lg:row-end-3">
           <img
             src="/images/featuredGallery/cocodrilo-featured.jpg"
-            alt="traditional cocodrile tattoo"
+            alt="traditional crocodrile tattoo"
             className="w-full h-full object-cover transition duration-500 hover:scale-105"
           />
         </div>

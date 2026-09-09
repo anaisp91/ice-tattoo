@@ -163,7 +163,7 @@ export const ContactForm = () => {
           ></textarea>
         </div>
         <div className="flex flex-col gap-2">
-          <label>References</label>
+          <label htmlFor="refrences">References</label>
           <input
             type="file"
             id="references"
@@ -177,7 +177,7 @@ export const ContactForm = () => {
             htmlFor="references"
             className="border border-[var(--color-sand)] text-[var(--color-sand)] py-1 cursor-pointer w-[150px] text-center hover:bg-[var(--color-sand)] hover:text-[--color-black] transition-all duration-300"
           >
-            Upload fle
+            Upload file
           </label>
           {form.references.length === 0
             ? ""
