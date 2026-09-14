@@ -4,3 +4,4 @@ export * from "../pages/Gallery";
 export * from "../pages/Faq";
 export * from "../pages/Contact";
 export * from "../pages/NotFound";
+export * from "../pages/ThankYou";

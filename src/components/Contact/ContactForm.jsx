@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const ContactForm = () => {
   const [form, setForm] = useState({
@@ -12,6 +13,7 @@ export const ContactForm = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(null);
+  const navigate = useNavigate();
 
   const onChange = (e) => {
     const value = e.target.type === "file" ? e.target.files : e.target.value;
@@ -64,6 +66,9 @@ export const ContactForm = () => {
         idea: "",
         references: "",
       });
+      navigate("/thank-you", {
+        state: { fromForm: true },
+      });
     } catch {
       setError("Request failed");
     } finally {
@@ -84,6 +89,7 @@ export const ContactForm = () => {
             type="text"
             id="name"
             name="name"
+            required
             onChange={onChange}
             value={form.name}
             className=" max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
@@ -95,6 +101,7 @@ export const ContactForm = () => {
             type="email"
             id="email"
             name="email"
+            required
             onChange={onChange}
             value={form.email}
             className="border-b border-[var(--color-sand)] bg-transparent outline-none md:max-w-[400px]"
@@ -107,6 +114,7 @@ export const ContactForm = () => {
               type="radio"
               name="upperage"
               value="yes"
+              required
               onChange={onChange}
               className="accent-[var(--color-blue)]"
               checked={form.upperage === "yes"}
@@ -132,6 +140,7 @@ export const ContactForm = () => {
               type="radio"
               name="tattooFor"
               value="myself"
+              required
               onChange={onChange}
               className="accent-[var(--color-blue)]"
               checked={form.tattooFor === "myself"}
@@ -157,6 +166,7 @@ export const ContactForm = () => {
             name="idea"
             rows="10"
             cols="30"
+            required
             onChange={onChange}
             value={form.idea}
             className="max-w-[200px] border-b border-[var(--color-sand)] bg-transparent outline-none resize-none h-24 md:max-w-[400px]"
